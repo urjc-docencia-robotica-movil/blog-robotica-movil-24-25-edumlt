@@ -20,7 +20,7 @@ El primer objetivo fue conseguir controlar el tiempo de giro para lograr consegu
 
 No pude obtener el comportamiento deseado, ya que el tiempo de giro era poco preciso. En este caso, una aproximación con la posición del robot hubiera dado mejor resultado.
 
-[Diagrama_de_estados]
+![Diagrama_de_estados](Diagrama_de_estados.png)
 
 El segundo objetivo fue la implementación del laser para la realización del giro. Más adelante comentaré los detalles y pruebas realizadas.
 
@@ -33,16 +33,16 @@ Este algoritmo no se aleja mucho de los primeros pasos tomados, pero la principa
 
 #### Primeros pasos
 
-[Imagen_primera_aproximación]
+![Imagen_primera_aproximación](Bumper_inicial.png)
 
 #### Resultado final
 
-[Imagen_resultado_final]
+![Imagen_resultado_final](Bumper_final.png)
 
 
 ### Video del funcionamiento
 
-[Video_Bumper]
+[https://urjc-my.sharepoint.com/:v:/g/personal/e_martint_2022_alumnos_urjc_es/EY-9P5p2xh5LtlTjm74tYSMBickSX3LfNDxW7yhTOQpMIw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=gzXhVg]
 
 ## Algoritmo laser experimental 
 
@@ -66,9 +66,9 @@ Tras ejecutar el código, confirme totalmente que las medidas del laser no son d
 
 En este punto retomé la línea de investigación con respecto al uso del bumper y el tiempo aleatorio.
 
-#### Video
+### Video del funcionamiento
 
-[Video_Laser]
+[https://urjc-my.sharepoint.com/:v:/g/personal/e_martint_2022_alumnos_urjc_es/ESbIRE_tPzRMrOdwiWTWP2QB4XOqTrVhDRxxFVCf0zlk-g?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=89ON02]
 
 ## Conclusión
 
