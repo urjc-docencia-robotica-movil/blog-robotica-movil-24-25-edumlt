@@ -58,7 +58,7 @@ Tras conocer las limitaciones del láser, me planteé la posibilidad de determin
 
 _Cuando el robot choca de manera frontal y se inicia el giro en sentido horario o antihorario, se toma una primera instantánea de la distancia en el lado externo de la circunferencia. A medida que el robot gira, la distancia recogida por el laser irá reduciéndose hasta que se tomen datos perpendiculares a la pared, estos equivaldrían a dar un giro de 90º_
 
-[Esquema_de_la idea]
+![Esquema_de_la idea](Idea_rotar_laser.png)
 
 La primera aproximación que encontré a la idea fue la siguiente:
 
