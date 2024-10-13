@@ -74,11 +74,19 @@ Las primeras pruebas no fueron sencillas. Seguí las indicaciones **Trial and Er
   - Cuando se añadía la parte *Integral* el sistema no era capaz de soportar valores por encima del 0.01 debido a que el error está basado en pixeles.
   - La parte _Derivativa_ mejoró la respuesta y suavizó la salida del controlador.
 
-Al ir cambiando de mapas, me di cuenta que había curbas casi de 90º en las que la línea se perdía en la imagen. Por este motivo implementó el sistema de recuperación, que se encuentra en uso en ambos modelos.
+Al ir cambiando de mapas, me di cuenta que había curbas casi de 90º en las que la línea se perdía en la imagen. Por este motivo implementó el sistema de recuperación, que se encuentra en uso en ambos modelos (video[^3]).
 
-### Video del funcionamiento[^3]
+### Video del funcionamiento
 
-[^3]: https://urjc-my.sharepoint.com/:v:/g/personal/e_martint_2022_alumnos_urjc_es/EYOJHrdtZ9lLtfOoqai7q2IBzfw1r3AZ0RBbvwvc1yM9Fw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=FjjUVY
+Circuito Simple: [^4]
+
+Circuito Montreal: [^5]
+
+[^3]: https://urjc-my.sharepoint.com/:v:/g/personal/e_martint_2022_alumnos_urjc_es/EaO5f-uYlzRJporu-dv_NOUBqvAH38CiXoG3eaDXG7PjTw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=8Y1PGv
+
+[^4]: https://urjc-my.sharepoint.com/:v:/g/personal/e_martint_2022_alumnos_urjc_es/EYOJHrdtZ9lLtfOoqai7q2IBzfw1r3AZ0RBbvwvc1yM9Fw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=FjjUVY
+
+[^5]: https://urjc-my.sharepoint.com/:v:/g/personal/e_martint_2022_alumnos_urjc_es/EZkseKaT7w9OtWQl8UjW3WcB4_DpEJgtNPwKug1sX39ZjA?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=coTtsu
 
 ## Modelo Simple Ackerman 
 
@@ -97,9 +105,11 @@ En el resto de circuitos, hay tramos en los que el coche pierde velocidad sin se
 
 Por lo demás, el sistema de recuperación facilita que en ciertos tramos el coche pueda volver a encontrar la línea cuando gira lentamente en curvas cerradas.
 
-### Video del funcionamiento[^4]
+### Video del funcionamiento
 
-[^4]: https://urjc-my.sharepoint.com/:v:/g/personal/e_martint_2022_alumnos_urjc_es/EchC776sz0RIu_404AEnlwoBDtn4ML0FLBw7xrd4ARXCaw
+Circuito Ackerman: [^6]
+
+[^6]: https://urjc-my.sharepoint.com/:v:/g/personal/e_martint_2022_alumnos_urjc_es/EchC776sz0RIu_404AEnlwoBDtn4ML0FLBw7xrd4ARXCaw
 
 ## Conclusión
 
