@@ -71,10 +71,9 @@ Luego, empece a modificar los valores de ælpha y ẞeta, pero no llegaba a enco
 
 Finalmente conseguí que el coche se moviera por el circuito esquibando los primero obstaculos. Pero actualmente, tras una de las ultimas curvas, el coche se detiene debido a un minimo tras un cambio brusco en la posicíon del target.
 
-### Video del funcionamiento
+### Video del funcionamiento[^2]
 
-
-
+[^2]: https://urjc-my.sharepoint.com/:v:/g/personal/e_martint_2022_alumnos_urjc_es/ERsUYvq6aqtDi-2qGU6JUqUBz2WiHx-MeGGQmXsDIgcPug?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=bYhh0U
 
 ## Conclusión
 
