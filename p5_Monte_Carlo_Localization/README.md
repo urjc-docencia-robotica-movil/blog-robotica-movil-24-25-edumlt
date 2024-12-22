@@ -12,8 +12,10 @@ La aproximación a este problema se realizará mediante 3 partes:
 
 3. Regeneración de partículas (Resampling): Tras un desplazamiento, recogemos las medidas de los láseres reales y simulamos las mediciones por cada partícula creada. Estas medidas darán como resultado distancias, las cuales emplearemos para hallar las diferencias y asignar pesos a las partículas en función de las similitudes de estas medidas.
 
-![Ejemplo_inicialización](https://ars.els-cdn.com/content/image/1-s2.0-S0378475414000548-gr1.jpg)
-
+<div align="center">
+<p style = 'text-align:center;'><img src="https://ars.els-cdn.com/content/image/1-s2.0-S0378475414000548-gr1.jpg" alt="JuveYell"> </p>
+</div>
+  
 ## Experiencias y resultados
 
 ### Modelo probabilístico
@@ -24,10 +26,11 @@ En función del numero de partículas, se generarían mas o menos cuadrantes dis
 
 **Formula empleada**
 
-$square_aprox = \sqrt{N_PARTICLES}$
+$squareAprox = \sqrt{num particles}$
 
-$square_height = \frac{Space_height}{square_aprox}$
-$square_width = \frac{Space_width}{square_aprox}$
+$squareHeight = \frac{spaceHeight}{squareAprox}$
+
+$squareWidth = \frac{spaceWidth}{squareAprox}$
 
 ### Modelo de movimiento
 
@@ -37,7 +40,7 @@ El resultado permite desplazar las partículas de manera similar al movimiento r
 
 **Formula empleada**
 
-$ Desplazamiento = Distancia_inicial(x,y,\theta) – Distancia_final(x,y,\theta)$
+$Desplazamiento = Distancia Inicial(X,Y,\theta) – Distancia Final(X,Y,\theta)$
 
 ### Regeneración de partículas
 
@@ -45,7 +48,7 @@ Tras el desplazamiento de las partículas, se procesaran individualmente cada un
 
 **Formula empleada**
 
-$ P(X,Y,\theta) = e^{-distancia(obs_laser - obs_particula)}
+$P(X,Y,\theta) = e^{-distancia(obsLaser - obsParticula)}$
 
 ### Observaciones
 
