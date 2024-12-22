@@ -82,7 +82,7 @@ Se ha hecho uso del módulo multiprocesamiento láser para ejecutar en paralelo 
 
 - Para el numero de partículas:
 ```
-N_PARTICLES = 529
+N_PARTICLES = 629
 ```
 - Para el ruido al iniciar las partículas:
 ```
@@ -100,7 +100,7 @@ LASER_NUM_BEAMS = 20
 ```
 - EL numero de espacios saltados en la lectura de laser:
 ```
-RAYTRACING_SKIP_STEPS = 1
+RAYTRACING_SKIP_STEPS = 2
 ```
 
 ### Observaciones
