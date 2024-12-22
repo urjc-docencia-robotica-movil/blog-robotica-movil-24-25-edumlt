@@ -10,7 +10,7 @@ La aproximación a este problema se realizará mediante 4 partes:
 
 2. Modelo de movimiento: Este es el encargado de desplazar las partículas acompasadas por el movimiento del robot. Es importante destacar que el movimiento nunca es perfecto y por ello se añade ruido al desplazamiento de las partículas.
 
-4. Asignación de los pesos: Tras un desplazamiento, recogemos las medidas de los láseres reales y simulamos las mediciones por cada partícula creada. Estas medidas darán como resultado distancias, las cuales emplearemos para hallar las diferencias y asignar pesos a las partículas en función de las similitudes de estas medidas.
+4. Asignación de los pesos: Tras un desplazamiento, recogemos las medidas de los láseres reales y simulamos las mediciones por cada partícula creada. Estas medidas darán como resultado distancias, las cuales emplearemos para hallar las diferencias y asignar pesos a las partículas en función de las similitudes de estas medidas. Para la recolección de los datos teoricos de las particulas, se emplea el metodo raytracing.
 
 5. Regeneración de partículas (Resampling): Una vez que se tienen las probabilidades, se hace uso del algoritmo de la ruleta. Este permite redistribuir las partículas a las zonas con mayor probabilidad.
 
@@ -48,9 +48,11 @@ El resultado permite desplazar las partículas de manera similar al movimiento r
 
 $Desplazamiento = Distancia Inicial(X,Y,\theta) – Distancia Final(X,Y,\theta)$
 
-### Asignación de pesos
+### Asignación de pesos (raytracing)
 
-Tras el desplazamiento de las partículas, se procesará individualmente cada una de ellas con los datos recibidos por el láser. En esta ocasión, para poder procesar todas las partículas se ha empleado multiprocessing. La fórmula empleada es la diferencia entre las distintas medidas del láser, frente a las estimaciones de la partícula a procesar.
+Tras el desplazamiento de las partículas, se procesará individualmente cada una de ellas con los datos recibidos por el láser. En esta ocasión, para poder procesar todas las partículas se ha empleado multiprocessing, que facilita el porceso de raytracing y el calculo posterior de los pesos. 
+
+La fórmula empleada es la diferencia entre las distintas medidas del láser, frente a las estimaciones de la partícula a procesar.
 
 **Fórmula empleada**
 
@@ -71,6 +73,35 @@ Las partículas en población T+1 se generan de manera aleatoria, pero cuando la
 ### Video del funcionamiento
 
 [Video del funcionamiento](https://urjc-my.sharepoint.com/:v:/g/personal/e_martint_2022_alumnos_urjc_es/EevEh02F65VIocZLRoER5_wBfNyFIEVtdhfH7gJPJ7cAHg?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=emcbig)
+
+### Metodo de optimicacíon
+
+Se ha hecho uso del módulo multiprocesamiento láser para ejecutar en paralelo la asignación de pesos. Esto ha acelerado la convergencia de las particulas.
+
+### Parametros empleados 
+
+- Para el numero de partículas:
+```
+N_PARTICLES = 529
+```
+- Para el ruido al iniciar las partículas:
+```
+INIT_XY_STD = 0.7
+INIT_ANGLE_STD = 1.4
+```
+- En el ruido de propagación:
+```
+PROPAGATION_XY_NOISE_STD = 0.05
+PROPAGATION_ANGLE_NOISE_STD = 0.001
+```
+- El numero de Láseres empleados:
+```
+LASER_NUM_BEAMS = 20
+```
+- EL numero de espacios saltados en la lectura de laser:
+```
+RAYTRACING_SKIP_STEPS = 1
+```
 
 ### Observaciones
 
